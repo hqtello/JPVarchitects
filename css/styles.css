@@ -1,7 +1,52 @@
+/* https://pattersons.com/ */
 :root {
     --color-primary: #363636;
     --color-secondary: #8c8c8c;
     --color-accent: #fc6203;
-    --color-headings: #cccccc;
+    --color-headings: #e0e0e0;
     --color-body: #bababa;
 }   
+
+html {
+    font-size: 62.5%;
+}
+
+/* TYPOGRAPHY */
+body {
+    color: var(--color-body);
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: 'Big Shoulders Stencil Text', Arial, Helvetica, sans-serif;
+    color: var(--color-headings);
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+}
