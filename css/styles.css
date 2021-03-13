@@ -22,6 +22,8 @@ html {
 /* Icons */
 /* Cards */
 /* Grids */
+/* Collapsibles */
+/* Navbar */
 
 /* TYPOGRAPHY */
 body {
@@ -30,7 +32,6 @@ body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    padding: 2rem;
 }
 
 h1, h2, h3 {
@@ -130,6 +131,14 @@ a {
     fill: var(--color-icons);
 }
 
+.icon--white {
+    fill: #fff;
+}
+
+.icon--dark {
+    fill: var(--color-primary);
+}
+
 .icon-container {
     display: inline-flex;
     justify-content: center;
@@ -219,4 +228,71 @@ a {
         grid-row: 6 / 7;
     }
 
+}
+
+/* COLLAPSIBLES */
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+/* NAVBAR */
+.nav {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.nav__logo {
+    width: 100px;
+}
+
+.nav__list {
+    width: 100%;
+}
+
+.nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.nav__item>a {
+    color: var(--color-headings);
+    transition: color 0.2s;
+}
+
+.nav__item>a:hover {
+    color: var(--color-accent);
+}
+
+.nav__toggler {
+    opacity: 0.5;
 }

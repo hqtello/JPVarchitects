@@ -13,11 +13,44 @@
     <title>JPV Architects</title>
 </head>
 <body>
-    <nav class="nav">
-        <a href="/"><img src="images/logo.png" alt=""></a>
-        <svg class="icon icon--primary">
+    <!-- <nav class="nav">
+        <a href="/">
+            <img src="images/logo.png" class="nav__logo" alt="">
+        </a>
+        <svg class="icon icon--white nav__toggler">
             <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
-    </nav>
+        <ul class="list nav__list">
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Projects</a></li>
+            <li class="nav__item"><a href="#">Team</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+    </nav> -->
+
+    <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+            <h2 class="collapsible__heading" >Item 1</h2>
+                <svg class="icon icon--dark collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                </svg>
+        </header>
+        <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, at.
+        </div>
+    </div>
+    <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+            <h2 class="collapsible__heading" >Item 1</h2>
+                <svg class="icon icon--dark collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                </svg>
+        </header>
+        <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, at.
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
