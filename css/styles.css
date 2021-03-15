@@ -193,6 +193,7 @@ a {
     margin: 0 10px;
     grid-auto-rows: minmax(300px, 350px);
     gap: 10px;
+    margin-bottom: 5rem;
 }
 
 .gallery .card {
